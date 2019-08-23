@@ -16,8 +16,14 @@ namespace FirstConsoleApplication
             int SecondNum = Convert.ToInt32(Console.ReadLine());
             Console.Write("Enter an operation symbol(+, -, or x)");
             string Operation = Console.ReadLine();
+            int Answer;
 
-
+            if (Operation == "+")
+            {
+                Answer = FirstNum + SecondNum;
+                Console.WriteLine(Answer);
+            }
+            
         }
     }
 }

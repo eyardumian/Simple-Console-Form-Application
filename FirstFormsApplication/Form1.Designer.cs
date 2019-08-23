@@ -37,9 +37,8 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(70, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(325, 13);
+            this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Please enter two whole numbers and an operation symbol(+, -, or x).";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2

@@ -15,8 +15,9 @@ namespace FirstConsoleApplication
             Console.Write("Enter another whole number.");
             int SecondNum = Convert.ToInt32(Console.ReadLine());
             Console.Write("Enter an operation symbol(+, -, or x)");
-            
-            
+            string Operation = Console.ReadLine();
+
+
         }
     }
 }

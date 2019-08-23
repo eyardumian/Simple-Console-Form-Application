@@ -13,6 +13,7 @@ namespace FirstConsoleApplication
             Console.Write("Enter a whole number.");
             int FirstNum = Convert.ToInt32(Console.ReadLine());
             Console.Write("Enter another whole number.");
+            int SecondNum = Convert.ToInt32(Console.ReadLine());
         }
     }
 }

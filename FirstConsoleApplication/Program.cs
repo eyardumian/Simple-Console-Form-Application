@@ -10,6 +10,9 @@ namespace FirstConsoleApplication
     {
         static void Main(string[] args)
         {
+            Console.Write("Enter a whole number.");
+         
+       
         }
     }
 }

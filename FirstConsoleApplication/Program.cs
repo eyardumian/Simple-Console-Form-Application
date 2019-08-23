@@ -28,7 +28,11 @@ namespace FirstConsoleApplication
                 Answer = FirstNum - SecondNum;
                 Console.WriteLine(Answer);
             }
-            
+            else
+            {
+                Answer = FirstNum * SecondNum;
+                Console.WriteLine(Answer);
+            }
         }
     }
 }

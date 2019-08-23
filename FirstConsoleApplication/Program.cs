@@ -23,6 +23,11 @@ namespace FirstConsoleApplication
                 Answer = FirstNum + SecondNum;
                 Console.WriteLine(Answer);
             }
+            else if (Operation == "-")
+            {
+                Answer = FirstNum - SecondNum;
+                Console.WriteLine(Answer);
+            }
             
         }
     }

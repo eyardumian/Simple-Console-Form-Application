@@ -14,7 +14,9 @@ namespace FirstConsoleApplication
             int FirstNum = Convert.ToInt32(Console.ReadLine());
             Console.Write("Enter another whole number.");
             int SecondNum = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter an operation(addition, subtraction, or multiplication)");
+            Console.Write("Enter an operation symbol(+, -, or x)");
+            
+            
         }
     }
 }

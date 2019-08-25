@@ -30,12 +30,12 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.numOne = new System.Windows.Forms.TextBox();
+            this.numTwo = new System.Windows.Forms.TextBox();
+            this.operation = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.answer = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -55,26 +55,26 @@
             this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 1;
             // 
-            // textBox1
+            // numOne
             // 
-            this.textBox1.Location = new System.Drawing.Point(165, 60);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
+            this.numOne.Location = new System.Drawing.Point(165, 60);
+            this.numOne.Name = "numOne";
+            this.numOne.Size = new System.Drawing.Size(100, 20);
+            this.numOne.TabIndex = 2;
             // 
-            // textBox2
+            // numTwo
             // 
-            this.textBox2.Location = new System.Drawing.Point(165, 118);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 3;
+            this.numTwo.Location = new System.Drawing.Point(165, 118);
+            this.numTwo.Name = "numTwo";
+            this.numTwo.Size = new System.Drawing.Size(100, 20);
+            this.numTwo.TabIndex = 3;
             // 
-            // textBox3
+            // operation
             // 
-            this.textBox3.Location = new System.Drawing.Point(165, 180);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 4;
+            this.operation.Location = new System.Drawing.Point(165, 180);
+            this.operation.Name = "operation";
+            this.operation.Size = new System.Drawing.Size(100, 20);
+            this.operation.TabIndex = 4;
             // 
             // button1
             // 
@@ -84,6 +84,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "CALCULATE";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -94,26 +95,26 @@
             this.label3.Size = new System.Drawing.Size(0, 13);
             this.label3.TabIndex = 6;
             // 
-            // label4
+            // answer
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(528, 124);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "ANSWER:        ";
+            this.answer.AutoSize = true;
+            this.answer.Location = new System.Drawing.Point(528, 124);
+            this.answer.Name = "answer";
+            this.answer.Size = new System.Drawing.Size(82, 13);
+            this.answer.TabIndex = 7;
+            this.answer.Text = "ANSWER:        ";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.answer);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.operation);
+            this.Controls.Add(this.numTwo);
+            this.Controls.Add(this.numOne);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -128,12 +129,12 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox numOne;
+        private System.Windows.Forms.TextBox numTwo;
+        private System.Windows.Forms.TextBox operation;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label answer;
     }
 }
 

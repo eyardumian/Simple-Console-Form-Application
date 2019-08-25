@@ -26,5 +26,15 @@ namespace FirstFormsApplication
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int FirstNum = Convert.ToInt32(numOne.Text);
+            int SecondNum = Convert.ToInt32(numTwo.Text);
+            string Operation = operation.Text;
+            int Answer;
+
+            
+        }
     }
 }

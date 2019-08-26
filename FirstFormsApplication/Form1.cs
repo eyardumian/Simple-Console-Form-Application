@@ -39,6 +39,10 @@ namespace FirstFormsApplication
                 Answer = FirstNum + SecondNum;
                 answer.Text = Answer.ToString();
             }
+            else if (Operation.Equals("-"))
+            {
+                Answer = FirstNum - SecondNum;
+                answer.Text = Answer.ToString();
+            }
         }
-    }
 }

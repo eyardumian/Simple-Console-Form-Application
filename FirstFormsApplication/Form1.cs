@@ -29,26 +29,29 @@ namespace FirstFormsApplication
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // Variables for input and ouput.
             int FirstNum = Convert.ToInt32(numOne.Text);
             int SecondNum = Convert.ToInt32(numTwo.Text);
             string Operation = operation.Text;
             int Answer;
 
+            //Determine what operation to use.
             if (Operation.Equals("+"))
             {
                 Answer = FirstNum + SecondNum;
-                answer.Text = Answer.ToString();
+                answer.Text = "Answer:" + "  " + Answer.ToString();
             }
             else if (Operation.Equals("-"))
             {
                 Answer = FirstNum - SecondNum;
-                answer.Text = Answer.ToString();
+                answer.Text = "Answer:" + "  " + Answer.ToString();
             }
             else if (Operation.Equals("x"))
             {
                 Answer = FirstNum * SecondNum;
                 answer.Text = "Answer:" + "  " + Answer.ToString();
             }
+            // Display message if user input is incorrect.
             else
             {
                 answer.Text = "Wrong input.";

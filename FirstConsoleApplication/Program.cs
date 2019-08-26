@@ -10,6 +10,7 @@ namespace FirstConsoleApplication
     {
         static void Main(string[] args)
         {
+            //User prompts, variable assignments, and input conversions.
             Console.Write("Enter a whole number.");
             int FirstNum = Convert.ToInt32(Console.ReadLine());
             Console.Write("Enter another whole number.");
@@ -18,6 +19,7 @@ namespace FirstConsoleApplication
             string Operation = Console.ReadLine();
             int Answer;
 
+            //Determine which operation to use.
             if (Operation == "+")
             {
                 Answer = FirstNum + SecondNum;
@@ -33,6 +35,7 @@ namespace FirstConsoleApplication
                 Answer = FirstNum * SecondNum;
                 Console.WriteLine(Answer);
             }
+            //Display error message if user input is incorrect.
             else
             {
                 Console.WriteLine("Wrong input.");

@@ -34,7 +34,11 @@ namespace FirstFormsApplication
             string Operation = operation.Text;
             int Answer;
 
-            
+            if (Operation.Equals("+"))
+            {
+                Answer = FirstNum + SecondNum;
+                answer.Text = Answer.ToString();
+            }
         }
     }
 }

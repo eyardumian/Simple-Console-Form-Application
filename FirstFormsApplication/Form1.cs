@@ -44,5 +44,10 @@ namespace FirstFormsApplication
                 Answer = FirstNum - SecondNum;
                 answer.Text = Answer.ToString();
             }
+            else if (Operation.Equals("x"))
+            {
+                Answer = FirstNum * SecondNum;
+                answer.Text = "Answer:" + "  " + Answer.ToString();
+            }
         }
 }

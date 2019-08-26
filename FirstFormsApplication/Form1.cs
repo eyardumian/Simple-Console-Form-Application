@@ -49,5 +49,10 @@ namespace FirstFormsApplication
                 Answer = FirstNum * SecondNum;
                 answer.Text = "Answer:" + "  " + Answer.ToString();
             }
+            else
+            {
+                answer.Text = "Wrong input.";
+            }
         }
+    }
 }

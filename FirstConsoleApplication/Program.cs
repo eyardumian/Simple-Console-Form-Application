@@ -28,10 +28,14 @@ namespace FirstConsoleApplication
                 Answer = FirstNum - SecondNum;
                 Console.WriteLine(Answer);
             }
-            else
+            else if (Operation == "x")
             {
                 Answer = FirstNum * SecondNum;
                 Console.WriteLine(Answer);
+            }
+            else
+            {
+                Console.WriteLine("Wrong input.");
             }
         }
     }
